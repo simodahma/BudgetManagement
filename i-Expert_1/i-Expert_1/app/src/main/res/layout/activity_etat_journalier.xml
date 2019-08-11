@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.i_expert.EtatJournalier">
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="1000dp"
+        android:layout_height="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView5"
+        app:srcCompat="@android:color/holo_orange_dark" />
+
+    <ImageView
+        android:layout_width="178dp"
+        android:layout_height="162dp"
+        app:srcCompat="@drawable/pdfimage"
+        tools:layout_editor_absoluteY="50dp"
+        tools:layout_editor_absoluteX="200dp"
+        android:id="@+id/imageView2"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/imageView10"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="&quot;  TrainersImg &quot;"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textView6"
+        android:textStyle="normal|bold"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:text="Le rapport sera enregistré  dans le dossier "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="255dp"
+        tools:layout_editor_absoluteX="26dp"
+        android:id="@+id/textView3"
+        android:textSize="18dp"
+        android:layout_marginTop="62dp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/BtnSavef"
+        android:layout_width="384dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_purple"
+        android:text="générer le rapport"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="455dp" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+
+            android:id="@+id/nav_action"
+            android:icon="?attr/actionModePasteDrawable"
+            android:title="Actions" />
+
+
+        <item
+            android:id="@+id/nav_opt"
+            android:icon="@drawable/menu"
+            android:title="Options" />
+
+        <item
+
+            android:id="@+id/nav_espaceadmin"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="Espace admin" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_etat"
+                android:icon="@android:drawable/ic_menu_day"
+                android:title="Chargement" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Envoyer rapport" />
+            <item
+                android:id="@+id/nav_quit"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="Quitter" />
+        </menu>
+    </item>
+
+</menu>

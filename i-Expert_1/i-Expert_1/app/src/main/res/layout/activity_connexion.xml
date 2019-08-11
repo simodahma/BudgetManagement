@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.example.admin.i_expert.Connexion">
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_purple"
+        android:drawableRight="@drawable/connect_"
+        android:text="Connexion"
+        android:textColor="@android:color/background_dark" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/login"
+        android:id="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="  Mot de passe"
+        android:inputType="textNoSuggestions"
+        app:animationType="fromRight"
+        app:animateCursor="true"
+        app:animateTextClear="true"
+        android:id="@+id/E_NameF"
+        android:textColor="@android:color/background_dark"
+        android:textColorLink="@android:color/white"
+        android:textCursorDrawable="@android:color/holo_green_light"
+        android:nestedScrollingEnabled="false"
+        android:drawableLeft="@drawable/key"
+        android:password="true"
+        android:textSize="15sp"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/E_Namek"
+        android:layout_centerHorizontal="true" />
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="  Nom d'utilisateur"
+        android:inputType="textNoSuggestions"
+        app:animationType="fromRight"
+        app:animateCursor="true"
+        app:animateTextClear="true"
+        android:id="@+id/E_Namek"
+        android:cursorVisible="true"
+        android:drawableLeft="@drawable/user"
+        android:textColorLink="@android:color/background_light"
+        android:textCursorDrawable="@android:color/holo_green_light"
+
+        android:textSize="15sp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignLeft="@+id/E_NameF"
+        android:layout_alignStart="@+id/E_NameF" />
+
+</RelativeLayout>

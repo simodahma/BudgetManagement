@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.i_expert.ModifierAction">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="1000dp"
+        android:layout_height="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView5"
+        app:srcCompat="@android:color/holo_orange_dark" />
+
+    <EditText
+        android:id="@+id/eprix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_alignRight="@+id/elieu"
+        android:layout_alignEnd="@+id/elieu" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIEU  :"
+        android:layout_below="@+id/edsc"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginTop="24dp"
+        android:textStyle="normal|bold"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edsc"
+        android:layout_alignStart="@+id/edsc"
+        android:layout_below="@+id/sp2"
+        android:layout_marginTop="57dp"
+        android:text="DESCRIPTION   :"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:id="@+id/edsc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRIX :"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="22dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_below="@+id/elieu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selectionner l'id du description"
+        android:id="@+id/textView2"
+        android:textSize="@dimen/nav_header_vertical_spacing"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/imageView8"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@android:color/holo_purple"
+        android:drawableRight="@android:drawable/ic_menu_edit"
+        android:text="MODIFIER"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnpict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRENDRE PHOTO"
+        android:onClick="DF"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp" />
+
+    <EditText
+        android:id="@+id/elieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/textView10"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_alignRight="@+id/edsc"
+        android:layout_alignEnd="@+id/edsc"
+        android:inputType="textPersonName" />
+
+    <ImageView
+        android:id="@+id/Inv"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/cam"
+        android:layout_alignTop="@+id/sp2"
+        android:layout_alignLeft="@+id/btnpict"
+        android:layout_alignStart="@+id/btnpict" />
+
+    <Spinner
+        android:id="@+id/sp2"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10" />
+
+</RelativeLayout>
